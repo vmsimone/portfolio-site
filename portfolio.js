@@ -16,7 +16,7 @@ function openProjectsPage() {
       <br><br>
       <img 
         class="screenshot"
-        src="./images/mindful-eater.png" 
+        src="./images/mindful-eater.PNG" 
         alt="screenshot"
       />
       <p class="desc">
@@ -33,7 +33,7 @@ function openProjectsPage() {
       <br><br>
       <img 
         class="screenshot" 
-        src="./images/pictranslate.png" 
+        src="./images/pictranslate.PNG" 
         alt="screenshot" 
       />
       <p class="desc">
@@ -49,7 +49,7 @@ function openProjectsPage() {
       <br><br>
       <img 
         class="screenshot" 
-        src="./images/comic-tracker.png" 
+        src="./images/comic-tracker.PNG" 
         alt="screenshot" 
       />
       <p class="desc">
