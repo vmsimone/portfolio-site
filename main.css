@@ -1,0 +1,45 @@
+nav {
+  position: fixed;
+  background: lightgray;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 10px;
+  text-align: center;
+}
+
+img {
+  max-width: 75%;
+  border-radius: 10px;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
