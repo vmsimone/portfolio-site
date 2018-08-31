@@ -17,7 +17,8 @@ function openProjectsPage() {
       <img 
         class="screenshot"
         src="https://github.com/vmsimone/mindful-eater-client/blob/master/screenshots/diets.PNG?raw=true" 
-        alt="screenshot" />
+        alt="screenshot" 
+      />
       <p class="desc">blah blah blah blah</p>
     </div>
     <div class="project">
@@ -28,7 +29,8 @@ function openProjectsPage() {
       <img 
         class="screenshot" 
         src="https://github.com/vmsimone/PicTranslate/blob/master/Screenshot1.PNG?raw=true" 
-        alt="screenshot" />
+        alt="screenshot" 
+      />
       <p class="desc">blah blah blah blah</p>
     </div>
     <div class="project">
@@ -36,7 +38,11 @@ function openProjectsPage() {
       <a href="">GitHub Repo</a>
       <a href="">Live Site</a>
       <br>
-      <img class="screenshot" src="#" alt="screenshot" />
+      <img 
+        class="screenshot" 
+        src="https://raw.githubusercontent.com/vmsimone/portfolio-site/master/screenshots/mr-robot.png" 
+        alt="screenshot" 
+      />
       <p class="desc">blah blah blah blah</p>
     </div>
     <div class="other-work">
