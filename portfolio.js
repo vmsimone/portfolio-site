@@ -11,46 +11,90 @@ function openProjectsPage() {
     <h1>Projects</h1>
     <div class="project">
       <h2 class="project-title">Mindful Eater</h2>
-      <a href="">GitHub Repo</a>
-      <a href="">Live Site</a>
-      <br>
+      <a href="https://github.com/vmsimone/mindful-eater-client" target="_blank">GitHub Repo</a>
+      <a href="https://mindful-eater-client.herokuapp.com/" target="_blank">Live Site</a>
+      <br><br>
       <img 
         class="screenshot"
-        src="https://github.com/vmsimone/mindful-eater-client/blob/master/screenshots/diets.PNG?raw=true" 
-        alt="screenshot" 
+        src="./images/mindful-eater.png" 
+        alt="screenshot"
       />
-      <p class="desc">blah blah blah blah</p>
+      <p class="desc">
+        Mindful Eater is a fullstack web application designed to help users 
+        track their eating habits, get information on the nutrients they're 
+        lacking or eating too much of, and see suggestions on what foods will 
+        provide these nutrients.
+      </p>
     </div>
     <div class="project">
       <h2 class="project-title">PicTranslate</h2>
-      <a href="">GitHub Repo</a>
-      <a href="">Live Site</a>
-      <br>
+      <a href="https://github.com/vmsimone/PicTranslate" target="_blank">GitHub Repo</a>
+      <a href="https://vmsimone.github.io/PicTranslate/" target="_blank">Live Site</a>
+      <br><br>
       <img 
         class="screenshot" 
-        src="https://github.com/vmsimone/PicTranslate/blob/master/Screenshot1.PNG?raw=true" 
+        src="./images/pictranslate.png" 
         alt="screenshot" 
       />
-      <p class="desc">blah blah blah blah</p>
+      <p class="desc">
+        PicTranslate is a multi-API app used for translating words or short phrases 
+        into words in other languages. Unlike a standard translator, this app also 
+        includes images to help aid understanding.
+      </p>
+    </div>
+    <div class="project">
+      <h2 class="project-title">Comic Tracker</h2>
+      <a href="https://github.com/vmsimone/comic-reader-app" target="_blank">GitHub Repo</a>
+      <a href="https://gentle-savannah-49734.herokuapp.com/" target="_blank">Live Site</a>
+      <br><br>
+      <img 
+        class="screenshot" 
+        src="./images/comic-tracker.png" 
+        alt="screenshot" 
+      />
+      <p class="desc">
+        Comic Tracker is a simple app for tracking the comics you read, 
+        seeing how many pages of comics you've read, and rating your favorites on a 
+        1-5 scale. The app utilizes its own database hosted on mLab.
+      </p>
     </div>
     <div class="project">
       <h2 class="project-title">Mr. Robot Quiz</h2>
-      <a href="">GitHub Repo</a>
-      <a href="">Live Site</a>
-      <br>
+      <a href="https://github.com/vmsimone/MR-ROBOT-Quiz" target="_blank">GitHub Repo</a>
+      <a href="https://vmsimone.github.io/MR-ROBOT-Quiz/" target="_blank">Live Site</a>
+      <br><br>
       <img 
         class="screenshot" 
-        src="https://raw.githubusercontent.com/vmsimone/portfolio-site/master/screenshots/mr-robot.png" 
+        src="./images/mr-robot.png" 
         alt="screenshot" 
       />
-      <p class="desc">blah blah blah blah</p>
+      <p class="desc">
+        A short, ten question trivia quiz based on the USA Network TV show, 
+        Mr. Robot. This web app was created using Object Oriented Programming and 
+        written using HTML, CSS, and jQuery
+      </p>
     </div>
     <div class="other-work">
       <h3>Other stuff</h3>
-      <img class="logo" src="#" />
-      <img class="logo" src="#" />
-      <img class="logo" src="#" />
-      <img class="logo" src="#" />
+      <ul>
+        <li class="logo">
+          <a href="https://www.freecodecamp.org/certification/vmsimone/legacy-front-end" target="_blank">
+            <img src="./images/freecodecamp.png" alt="free code camp certificate" />
+          </a>
+        </li>
+
+        <li class="logo">
+          <a href="https://www.codecademy.com/jackuhlantern" target="_blank">
+            <img src="./images/codecademy.png" alt="codecademy profile" />
+          </a>
+        </li>
+
+        <li class="logo">
+          <a href="https://codepen.io/collection/DpZogO/" target="_blank">
+            <img src="./images/codepen.png" alt="codepen profile" />
+          </a>
+        </li>
+      </ul>
     </div>
   `);
 }
@@ -59,9 +103,10 @@ function openContactPage() {
   $('main').html(`
     <h1>Contact</h1>
     <ul class="contact-info">
-      <li>Email: email@email.com</li>
-      <li>LinkedIn: username</li>
-      <li>Slack: slackhandle</li>
+      <li>Email: vsimone@protonmail.com</li>
+      <li>
+        <a href="https://www.linkedin.com/in/vincent-simone-07b203157/" target="_blank">LinkedIn</a>
+      </li>
       <li>
         <a href="https://github.com/vmsimone" target="_blank">GitHub</a>
       </li>
@@ -74,7 +119,7 @@ function navListener(id, callback) {
 }
 
 function readyNavLinks() {
-  openAboutPage();
+  openProjectsPage();
   navListener('#about', openAboutPage);
   navListener('#projects', openProjectsPage);
   navListener('#contact', openContactPage);
