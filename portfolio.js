@@ -1,8 +1,14 @@
 function openAboutPage() {
   $('main').html(`
     <h1>About Me</h1>
-    <img src="#" alt="me"/>
-    <p>I am a recent graduate of Thinkful's Coding Bootcamp living in Phoenix. I love science and technology, music, travel, and learning new things. I dabble in just about anything and, unlike other programmers in Phoenix, I can speak Japanese.<br><br>よろしくお願いします。</p>
+    <img class="profile-pic" src="./images/me.jpg" alt="me"/>
+    <p>
+      I am a recent graduate of Thinkful's Coding Bootcamp living in Phoenix. 
+      I love science and technology, music, travel, and learning new things. 
+      I dabble in just about anything and, unlike other programmers in Phoenix, 
+      I can speak Japanese.
+      <br><br>よろしくお願いします。
+    </p>
   `);
 }
 
@@ -103,7 +109,11 @@ function openContactPage() {
   $('main').html(`
     <h1>Contact</h1>
     <ul class="contact-info">
-      <li>Email: vsimone@protonmail.com</li>
+      <li>
+        <a href="mailto:vsimone@protonmail.com">
+          vsimone@protonmail.com
+        </a>
+      </li>
       <li>
         <a href="https://www.linkedin.com/in/vincent-simone-07b203157/" target="_blank">LinkedIn</a>
       </li>
@@ -119,7 +129,7 @@ function navListener(id, callback) {
 }
 
 function readyNavLinks() {
-  openProjectsPage();
+  openAboutPage();
   navListener('#about', openAboutPage);
   navListener('#projects', openProjectsPage);
   navListener('#contact', openContactPage);

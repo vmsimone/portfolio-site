@@ -5,6 +5,7 @@ nav {
   left: 0;
   top: 0;
   z-index: 1;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav ul {
@@ -34,16 +35,30 @@ nav button:hover,
 nav button:focus {
   color: red;
   cursor: pointer;
+  outline: 0;
 }
 
 main {
-  width: 80%;
   margin: 0 auto;
   display: block;
   position: relative;
   top: 30px;
   text-align: center;
-  font-family: sans;
+  font-family: 'Roboto Slab', serif;
+}
+
+main p {
+  max-width: 50%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.profile-pic {
+  max-width: 50%;
+  border-radius: 10px;
+  border: solid 2px black;
+  margin-bottom: 30px;
 }
 
 .project {
@@ -60,11 +75,13 @@ main {
 .project a:focus {
   text-decoration: underline;
   color: red;
+  outline: 0;
 }
 
 .project a,
 .project p {
   font-size: 20px;
+  max-width: 60%;
 }
 
 .project p {
@@ -79,8 +96,14 @@ main {
   border-radius: 10px;
 }
 
+.logo a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0;
+}
+
 .logo img {
-  max-width: 30%;
+  display: block;
   max-height: 50px;
   border: 2px solid black;
   border-radius: 10px;
@@ -107,15 +130,25 @@ main {
   list-style-type: none;
 }
 
-.logo a {
-  border: none;
-  margin: 0;
-}
-
 .contact-info {
-  text-align: left;
+  padding: 0;
 }
 
 .contact-info li {
+  list-style: none;
   margin-bottom: 10px;
+}
+
+.contact-info a {
+  text-decoration: underline;
+  color: black;
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+  color: red;
+}
+
+@media only screen and (min-width: 640px) {
+
 }
