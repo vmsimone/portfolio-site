@@ -8,6 +8,17 @@ nav {
   font-family: 'Roboto', sans-serif;
 }
 
+nav p {
+  color: white;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
 nav ul {
   padding: 0;
   margin: 0 auto;
@@ -18,18 +29,20 @@ nav ul {
 
 nav li {
   display: inline;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
   margin: 0 auto;
 }
 
 nav button {
   border: none;
-  font-size: 20px;
+  font-size: 12px;
   background: none;
   color: white;
   text-decoration: underline;
+  outline: none;
 }
+
 
 nav button:hover,
 nav button:focus {
@@ -38,24 +51,40 @@ nav button:focus {
   outline: 0;
 }
 
+footer {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  visibility: hidden;
+  bottom: 0;
+}
+
 main {
   margin: 0 auto;
+  margin-bottom: 25px;
   display: block;
   position: relative;
-  top: 30px;
+  top: 50px;
   text-align: center;
   font-family: 'Roboto Slab', serif;
 }
 
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
 main p {
-  max-width: 50%;
+  max-width: 90%;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
 
 .profile-pic {
-  max-width: 50%;
+  max-width: 90%;
   border-radius: 10px;
   border: solid 2px black;
   margin-bottom: 30px;
@@ -81,7 +110,7 @@ main p {
 .project a,
 .project p {
   font-size: 20px;
-  max-width: 60%;
+  max-width: 90%;
 }
 
 .project p {
@@ -91,9 +120,27 @@ main p {
 }
 
 .project img {
-  max-width: 75%;
+  max-width: 90%;
   border: 2px solid black;
   border-radius: 10px;
+}
+
+.project ul {
+  padding: 0;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.project li {
+  display: inline;
+  list-style: none;
+}
+
+.project li img {
+  border-radius: 100%;
+  padding: 5px;
+  height: 50px;
+  width: 50px;
 }
 
 .logo a {
@@ -122,7 +169,7 @@ main p {
 .other-work ul {
   margin: 0 auto;
   padding: 0;
-  max-width: 75%;
+  max-width: 90%;
 }
 
 .logo {
@@ -149,6 +196,53 @@ main p {
   color: red;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 660px) {
+  nav p {
+    right: 10px;
+    top: -2px;
+    position: fixed;
+  }
 
+  nav li {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  nav button {
+    font-size: 20px;
+  }
+
+  main {
+    top: 30px;
+  }
+
+  main p {
+    max-width: 50%;
+  }
+
+  .profile-pic {
+    max-width: 50%;
+  }
+
+  .project a,
+  .project p {
+    max-width: 60%;
+  }
+
+  .project p {
+    max-width: 75%;
+  }
+
+  .project img {
+    max-width: 75%;
+  }
+
+  .other-work ul {
+    max-width: 75%;
+  }
+
+  footer {
+    position: absolute;
+    visibility: visible;
+  }
 }

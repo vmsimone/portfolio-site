@@ -1,4 +1,15 @@
+function fixFooter(position) {
+  //only if we're not on mobile
+  let screenHeight = $(window).height();
+  console.log(screenHeight);
+
+  if(screenHeight > 850) {
+    $('footer').css('position', position);
+  }
+}
+
 function openAboutPage() {
+  fixFooter('absolute');
   $('main').html(`
     <h1>About Me</h1>
     <img class="profile-pic" src="./images/me.jpg" alt="me"/>
@@ -13,6 +24,7 @@ function openAboutPage() {
 }
 
 function openProjectsPage() {
+  fixFooter('relative');
   $('main').html(`
     <h1>Projects</h1>
     <div class="project">
@@ -31,7 +43,17 @@ function openProjectsPage() {
         lacking or eating too much of, and see suggestions on what foods will 
         provide these nutrients.
       </p>
+      <h3>Technology used:</h3>
+      <ul>
+        <li><img src="./images/react-logo.png" alt="react" title="react" /></li>
+        <li><img src="./images/redux-logo.png" alt="redux" title="redux" /></li>
+        <li><img src="./images/js-logo.png" alt="javascript" title="javascript" /></li>
+        <li><img src="./images/css-logo.png" alt="css" title="css" /></li>
+        <li><img src="./images/node-logo.jpg" alt="node" title="node" /></li>
+        <li><img src="./images/mongodb-logo.png" alt="mongodb" title="mongodb" /></li>
+      </ul>
     </div>
+
     <div class="project">
       <h2 class="project-title">PicTranslate</h2>
       <a href="https://github.com/vmsimone/PicTranslate" target="_blank">GitHub Repo</a>
@@ -47,7 +69,14 @@ function openProjectsPage() {
         into words in other languages. Unlike a standard translator, this app also 
         includes images to help aid understanding.
       </p>
+      <h3>Technology used:</h3>
+      <ul>
+        <li><img src="./images/html-logo.png" alt="html" title="html" /></li>
+        <li><img src="./images/css-logo.png" alt="css" title="css" /></li>
+        <li><img src="./images/js-logo.png" alt="javascript" title="javascript" /></li>
+      </ul>
     </div>
+
     <div class="project">
       <h2 class="project-title">Comic Tracker</h2>
       <a href="https://github.com/vmsimone/comic-reader-app" target="_blank">GitHub Repo</a>
@@ -63,7 +92,16 @@ function openProjectsPage() {
         seeing how many pages of comics you've read, and rating your favorites on a 
         1-5 scale. The app utilizes its own database hosted on mLab.
       </p>
+      <h3>Technology used:</h3>
+      <ul>
+        <li><img src="./images/html-logo.png" alt="html" title="html" /></li>
+        <li><img src="./images/css-logo.png" alt="css" title="css" /></li>
+        <li><img src="./images/js-logo.png" alt="javascript" title="javascript" /></li>
+        <li><img src="./images/node-logo.jpg" alt="node" title="node" /></li>
+        <li><img src="./images/mongodb-logo.png" alt="mongodb" title="mongodb" /></li>
+      </ul>
     </div>
+
     <div class="project">
       <h2 class="project-title">Mr. Robot Quiz</h2>
       <a href="https://github.com/vmsimone/MR-ROBOT-Quiz" target="_blank">GitHub Repo</a>
@@ -79,7 +117,14 @@ function openProjectsPage() {
         Mr. Robot. This web app was created using Object Oriented Programming and 
         written using HTML, CSS, and jQuery
       </p>
+      <h3>Technology used:</h3>
+      <ul>
+        <li><img src="./images/html-logo.png" alt="html" title="html" /></li>
+        <li><img src="./images/css-logo.png" alt="css" title="css" /></li>
+        <li><img src="./images/js-logo.png" alt="javascript" title="javascript" /></li>
+      </ul>
     </div>
+
     <div class="other-work">
       <h3>Other stuff</h3>
       <ul>
@@ -106,6 +151,7 @@ function openProjectsPage() {
 }
 
 function openContactPage() {
+  fixFooter('absolute');
   $('main').html(`
     <h1>Contact</h1>
     <ul class="contact-info">
