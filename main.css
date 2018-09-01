@@ -8,7 +8,7 @@ nav {
   font-family: 'Roboto', sans-serif;
 }
 
-nav header {
+nav p {
   color: white;
   text-align: center;
   max-width: 90%;
@@ -198,7 +198,7 @@ main p {
 }
 
 @media only screen and (min-width: 660px) {
-  nav header {
+  nav p {
     right: 10px;
     top: -2px;
     position: fixed;
