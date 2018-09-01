@@ -1,15 +1,13 @@
 function fixFooter(position) {
   //only if we're not on mobile
   let screenHeight = $(window).height();
-  console.log(screenHeight);
-
   if(screenHeight > 850) {
     $('footer').css('position', position);
   }
 }
 
 function openAboutPage() {
-  fixFooter('absolute');
+  fixFooter('relative');
   $('main').html(`
     <h1>About Me</h1>
     <img class="profile-pic" src="./images/me.jpg" alt="me"/>
@@ -152,6 +150,7 @@ function openProjectsPage() {
 
 function openContactPage() {
   fixFooter('absolute');
+  $('footer').css('bottom', '10px');
   $('main').html(`
     <h1>Contact</h1>
     <ul class="contact-info">

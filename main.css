@@ -8,7 +8,7 @@ nav {
   font-family: 'Roboto', sans-serif;
 }
 
-nav p {
+nav header {
   color: white;
   text-align: center;
   max-width: 90%;
@@ -70,6 +70,7 @@ main {
 
 h2 {
   font-size: 28px;
+  text-decoration: underline;
 }
 
 h3 {
@@ -91,7 +92,7 @@ main p {
 }
 
 .project {
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 }
 
 .project a {
@@ -197,7 +198,7 @@ main p {
 }
 
 @media only screen and (min-width: 660px) {
-  nav p {
+  nav header {
     right: 10px;
     top: -2px;
     position: fixed;
@@ -214,23 +215,19 @@ main p {
 
   main {
     top: 30px;
+    margin-bottom: 75px;
   }
 
   main p {
-    max-width: 50%;
+    max-width: 40%;
   }
 
   .profile-pic {
     max-width: 50%;
   }
 
-  .project a,
   .project p {
-    max-width: 60%;
-  }
-
-  .project p {
-    max-width: 75%;
+    max-width: 40%;
   }
 
   .project img {

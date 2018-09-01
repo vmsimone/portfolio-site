@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
   </head>
 
-  <body>
-    <nav>
-      <p>Vincent Simone</p>
+  <body role="document">
+    <nav role="navigation">
+      <header role="banner">Vincent Simone</header>
       <ul>
         <li>
           <button id="about">About Me</button>
@@ -23,12 +23,11 @@
         </li>
       </ul>
     </nav>
-    <main role="main">
+    <main role="main" aria-live="assertive">
       <!--Dynamic HTML will be placed here-->
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="portfolio.js"></script>
-    <footer>Written and coded by Vincent Simone</footer>
   </body>
-  
+  <footer role="contentinfo">Written and coded by Vincent Simone</footer>
 </html>
