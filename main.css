@@ -55,6 +55,7 @@ footer {
   font-family: 'Roboto', sans-serif;
   display: block;
   visibility: hidden;
+  text-align: center;
   bottom: 0;
 }
 
