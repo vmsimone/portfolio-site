@@ -240,7 +240,7 @@ main p {
   }
 
   footer {
-    position: absolute;
+    position: relative;
     visibility: visible;
   }
 }
