@@ -6,6 +6,53 @@ function fixFooter(position) {
   }
 }
 
+function createTechLogoList(arr) {
+  let logoList = "";
+  arr.forEach(logo => {
+    logoList += `<li><img src="./images/${logo}-logo.png" alt=${logo} title=${logo} /></li>
+    `;
+  });
+  return logoList;
+}
+
+//not strictly necessary, but this makes adding new projects a bit easier
+function appendProject(title, repo, liveSite, screenshot, description, techUsed) {
+  $('main').append(`
+    <div class="project">
+      <h2 class="project-title">${title}</h2>
+      <a href=${repo} target="_blank">GitHub Repo</a>
+      <a href=${liveSite} target="_blank">Live Site</a>
+      <br><br>
+      <img 
+        class="screenshot"
+        src=${screenshot}
+        alt="screenshot"
+      />
+      <p class="desc">
+        ${description}
+      </p>
+      <h3>Technology used:</h3>
+      <ul>
+        ${createTechLogoList(techUsed)}
+      </ul>
+    </div>
+  `);
+}
+
+function appendAllProjects() {
+  //from projectsArray.js
+  PROJECTS.forEach(project => {
+    appendProject(
+      project.title, 
+      project.repo, 
+      project.live, 
+      project.screenshot, 
+      project.desc, 
+      project.technology
+    );
+  });
+}
+
 function openAboutPage() {
   fixFooter('relative');
   $('main').html(`
@@ -23,106 +70,9 @@ function openAboutPage() {
 
 function openProjectsPage() {
   fixFooter('relative');
-  $('main').html(`
-    <h1>Projects</h1>
-    <div class="project">
-      <h2 class="project-title">Mindful Eater</h2>
-      <a href="https://github.com/vmsimone/mindful-eater-client" target="_blank">GitHub Repo</a>
-      <a href="https://mindful-eater-client.herokuapp.com/" target="_blank">Live Site</a>
-      <br><br>
-      <img 
-        class="screenshot"
-        src="./images/mindful-eater.PNG" 
-        alt="screenshot"
-      />
-      <p class="desc">
-        Mindful Eater is a fullstack web application designed to help users 
-        track their eating habits, get information on the nutrients they're 
-        lacking or eating too much of, and see suggestions on what foods will 
-        provide these nutrients.
-      </p>
-      <h3>Technology used:</h3>
-      <ul>
-        <li><img src="./images/react-logo.png" alt="react" title="react" /></li>
-        <li><img src="./images/redux-logo.png" alt="redux" title="redux" /></li>
-        <li><img src="./images/js-logo.png" alt="javascript" title="javascript" /></li>
-        <li><img src="./images/css-logo.png" alt="css" title="css" /></li>
-        <li><img src="./images/node-logo.jpg" alt="node" title="node" /></li>
-        <li><img src="./images/mongodb-logo.png" alt="mongodb" title="mongodb" /></li>
-      </ul>
-    </div>
-
-    <div class="project">
-      <h2 class="project-title">PicTranslate</h2>
-      <a href="https://github.com/vmsimone/PicTranslate" target="_blank">GitHub Repo</a>
-      <a href="https://vmsimone.github.io/PicTranslate/" target="_blank">Live Site</a>
-      <br><br>
-      <img 
-        class="screenshot" 
-        src="./images/pictranslate.PNG" 
-        alt="screenshot" 
-      />
-      <p class="desc">
-        PicTranslate is a multi-API app used for translating words or short phrases 
-        into words in other languages. Unlike a standard translator, this app also 
-        includes images to help aid understanding.
-      </p>
-      <h3>Technology used:</h3>
-      <ul>
-        <li><img src="./images/html-logo.png" alt="html" title="html" /></li>
-        <li><img src="./images/css-logo.png" alt="css" title="css" /></li>
-        <li><img src="./images/js-logo.png" alt="javascript" title="javascript" /></li>
-      </ul>
-    </div>
-
-    <div class="project">
-      <h2 class="project-title">Comic Tracker</h2>
-      <a href="https://github.com/vmsimone/comic-reader-app" target="_blank">GitHub Repo</a>
-      <a href="https://gentle-savannah-49734.herokuapp.com/" target="_blank">Live Site</a>
-      <br><br>
-      <img 
-        class="screenshot" 
-        src="./images/comic-tracker.PNG" 
-        alt="screenshot" 
-      />
-      <p class="desc">
-        Comic Tracker is a simple app for tracking the comics you read, 
-        seeing how many pages of comics you've read, and rating your favorites on a 
-        1-5 scale. The app utilizes its own database hosted on mLab.
-      </p>
-      <h3>Technology used:</h3>
-      <ul>
-        <li><img src="./images/html-logo.png" alt="html" title="html" /></li>
-        <li><img src="./images/css-logo.png" alt="css" title="css" /></li>
-        <li><img src="./images/js-logo.png" alt="javascript" title="javascript" /></li>
-        <li><img src="./images/node-logo.jpg" alt="node" title="node" /></li>
-        <li><img src="./images/mongodb-logo.png" alt="mongodb" title="mongodb" /></li>
-      </ul>
-    </div>
-
-    <div class="project">
-      <h2 class="project-title">Mr. Robot Quiz</h2>
-      <a href="https://github.com/vmsimone/MR-ROBOT-Quiz" target="_blank">GitHub Repo</a>
-      <a href="https://vmsimone.github.io/MR-ROBOT-Quiz/" target="_blank">Live Site</a>
-      <br><br>
-      <img 
-        class="screenshot" 
-        src="./images/mr-robot.png" 
-        alt="screenshot" 
-      />
-      <p class="desc">
-        A short, ten question trivia quiz based on the USA Network TV show, 
-        Mr. Robot. This web app was created using Object Oriented Programming and 
-        written using HTML, CSS, and jQuery
-      </p>
-      <h3>Technology used:</h3>
-      <ul>
-        <li><img src="./images/html-logo.png" alt="html" title="html" /></li>
-        <li><img src="./images/css-logo.png" alt="css" title="css" /></li>
-        <li><img src="./images/js-logo.png" alt="javascript" title="javascript" /></li>
-      </ul>
-    </div>
-
+  $('main').html(`<h1>Projects</h1>`);
+  appendAllProjects();
+  $('main').append(`
     <div class="other-work">
       <h3>Other stuff</h3>
       <ul>
