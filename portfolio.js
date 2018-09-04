@@ -1,9 +1,5 @@
 function fixFooter(position) {
-  //only if we're not on mobile
-  let screenHeight = $(window).height();
-  if(screenHeight > 850) {
-    $('footer').css('position', position);
-  }
+  $('footer').css('position', position);
 }
 
 function createTechLogoList(arr) {
