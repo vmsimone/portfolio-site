@@ -56,6 +56,7 @@ footer {
   display: block;
   visibility: hidden;
   text-align: center;
+  width: 100%;
   bottom: 0;
 }
 
