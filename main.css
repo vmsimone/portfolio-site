@@ -56,7 +56,6 @@ footer {
   display: block;
   visibility: hidden;
   text-align: center;
-  width: 100%;
   bottom: 0;
 }
 
@@ -243,5 +242,6 @@ main p {
   footer {
     position: relative;
     visibility: visible;
+    width: 99%;
   }
 }
