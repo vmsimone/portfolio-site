@@ -119,6 +119,7 @@ function aestheticize() {
   $('body').toggleClass('aesthetic');
   const aestheticized = $('body').hasClass('aesthetic');
   if(aestheticized) {
+    document.getElementById('macplus').volume = 0.2;
     $('#macplus').get(0).play();
   } else {
     $('#macplus').get(0).pause();
