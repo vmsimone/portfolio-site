@@ -120,7 +120,11 @@ function navListener(id, callback) {
 }
 
 function readyNavLinks() {
+  $('main, footer').hide();
   openAboutPage();
+  $('main').fadeIn('slow', () => {
+    $('footer').fadeIn('fast');
+  });
   navListener('#about', openAboutPage);
   navListener('#projects', openProjectsPage);
   navListener('#contact', openContactPage);
