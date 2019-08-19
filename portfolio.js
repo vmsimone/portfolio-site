@@ -115,6 +115,10 @@ function openContactPage() {
   `);
 }
 
+function aestheticize() {
+  $('body').toggleClass('aesthetic');
+}
+
 function navListener(id, callback) {
   $(id).on('click', callback);
 }
@@ -128,6 +132,7 @@ function readyNavLinks() {
   navListener('#about', openAboutPage);
   navListener('#projects', openProjectsPage);
   navListener('#contact', openContactPage);
+  navListener('#aestheticize', aestheticize);
 }
 
 $(readyNavLinks);

@@ -1,0 +1,17 @@
+.aesthetic {
+    background: linear-gradient(black, purple);
+    color: cyan;
+}
+
+.aesthetic a,
+.aesthetic button,
+.aesthetic nav p {
+    color: blueviolet;
+}
+
+.aesthetic a:hover,
+.aesthetic a:focus,
+.aesthetic button:hover,
+.aesthetic button:focus {
+    color: magenta;
+}
