@@ -117,6 +117,12 @@ function openContactPage() {
 
 function aestheticize() {
   $('body').toggleClass('aesthetic');
+  const aestheticized = $('body').hasClass('aesthetic');
+  if(aestheticized) {
+    $('#macplus').get(0).play();
+  } else {
+    $('#macplus').get(0).pause();
+  }
 }
 
 function navListener(id, callback) {

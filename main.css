@@ -2,6 +2,10 @@ html {
   min-height: 100%;
 }
 
+audio {
+  display: none;
+}
+
 nav {
   position: fixed;
   background: black;
