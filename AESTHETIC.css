@@ -1,12 +1,14 @@
 .aesthetic {
     background: linear-gradient(black, purple);
     color: cyan;
+    font-family: 'Carrois Gothic SC', sans-serif;
 }
 
 .aesthetic a,
 .aesthetic button,
 .aesthetic nav p {
     color: blueviolet;
+    font-family: 'Carrois Gothic SC', sans-serif;
 }
 
 .aesthetic a:hover,
@@ -14,4 +16,17 @@
 .aesthetic button:hover,
 .aesthetic button:focus {
     color: magenta;
+}
+
+.aesthetic  #aestheticize:hover,
+.aesthetic  #aestheticize:focus {
+    color: magenta;
+}
+
+.aesthetic h1,
+.aesthetic h2,
+.aesthetic h3,
+.aesthetic p,
+.aesthetic footer {
+    font-family: 'Carrois Gothic SC', sans-serif;
 }

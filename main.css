@@ -6,6 +6,20 @@ audio {
   display: none;
 }
 
+.secrets {
+  text-align: center;
+}
+
+#aestheticize {
+  color: black;
+  font-size: 12px;
+}
+
+#aestheticize:hover,
+#aestheticize:focus {
+  color: red;
+}
+
 nav {
   position: fixed;
   background: black;
@@ -72,7 +86,7 @@ main {
   margin-bottom: 25px;
   display: block;
   position: relative;
-  top: 50px;
+  top: 75px;
   text-align: center;
   font-family: 'Roboto Slab', serif;
 }
@@ -223,7 +237,7 @@ main p {
   }
 
   main {
-    top: 30px;
+    top: 50px;
     margin-bottom: 75px;
   }
 

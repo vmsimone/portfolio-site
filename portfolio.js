@@ -122,6 +122,7 @@ function aestheticize() {
     $('#macplus').get(0).play();
   } else {
     $('#macplus').get(0).pause();
+    document.getElementById('macplus').currentTime = 0;
   }
 }
 
