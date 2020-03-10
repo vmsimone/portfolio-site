@@ -2,6 +2,11 @@ html {
   min-height: 100%;
 }
 
+body {
+  min-height: 100%;
+  background: linear-gradient(45deg, #CCFFFF, #FFCCCC);
+}
+
 audio {
   display: none;
 }
@@ -73,17 +78,8 @@ nav button:focus {
   outline: 0;
 }
 
-footer {
-  font-family: 'Roboto', sans-serif;
-  display: block;
-  visibility: hidden;
-  text-align: center;
-  bottom: 0;
-}
-
 main {
   margin: 0 auto;
-  margin-bottom: 25px;
   display: block;
   position: relative;
   top: 75px;
@@ -105,6 +101,14 @@ main p {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
+}
+
+footer {
+  font-family: 'Roboto', sans-serif;
+  visibility: hidden;
+  position: relative;
+  bottom: 0;
+  margin-top: 75px;
 }
 
 .profile-pic {
@@ -186,10 +190,6 @@ main p {
   border-color: red;
 }
 
-.other-work {
-  margin-bottom: 50px;
-}
-
 .other-work ul {
   margin: 0 auto;
   padding: 0;
@@ -238,7 +238,6 @@ main p {
 
   main {
     top: 50px;
-    margin-bottom: 75px;
   }
 
   main p {
@@ -262,9 +261,6 @@ main p {
   }
 
   footer {
-    position: relative;
     visibility: visible;
-    width: 100%;
-    bottom: 0;
   }
 }
