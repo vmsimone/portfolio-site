@@ -1,13 +1,5 @@
 const PROJECTS = [
     {
-        "title": "Mindful Eater", 
-        "repo": "https://github.com/vmsimone/mindful-eater-client", 
-        "live": "https://mindful-eater-client.herokuapp.com/", 
-        "screenshot": "./images/mindful-eater.PNG", 
-        "desc": "Mindful Eater is a fullstack web application designed to help users track their eating habits, get information on the nutrients they're lacking or eating too much of, and see suggestions on what foods will provide these nutrients.", 
-        "technology": ["react", "redux", "javascript", "css", "node", "mongodb"]
-    },
-    {
         "title": "PicTranslate", 
         "repo": "https://github.com/vmsimone/PicTranslate", 
         "live": "https://vmsimone.github.io/PicTranslate/", 
